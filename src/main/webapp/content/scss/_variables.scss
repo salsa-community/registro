@@ -1,0 +1,126 @@
+//---------------------------------------------------------------------------------------
+// New variables and overridden variables from Bootstrap.
+// check out the variables.scss file in bootstrap for additional ones that are available.
+//---------------------------------------------------------------------------------------
+
+// Typography
+// $font-family-sans-serif: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif: 'Montserrat', sans-serif !important;
+// Changing the headings colour
+$headings-color: #706f6f;
+// Changing the body colour
+$body-color: #4d4f5c;
+$white: #ffffff;
+$text-color: #141414;
+
+// Changing the theme colors
+$primary: #1553b7;
+$secondary: #cce4f8;
+$info: #4d92df;
+$danger: #d0021b;
+$succes: #24a148;
+$warning: #ffa500;
+// $headings-color: #001538;
+$black-141414: #141414;
+$navbar-top: #001a44;
+$outilne-primary: #7c8faf;
+$outilne-primary-text: #404041;
+$border-perfil-usuario-sidebar: #011d4a;
+$exito: #65e567;
+
+$blue-conacyt: #002663;
+$gray-f8: #f8f8f8;
+$gray-100: #f4f4f4;
+$gray-200: #f2f2f2;
+$gray-300: #d4d4d4;
+$gray-400: #5a5a5a;
+$indigo: #4ba3ff;
+$green: $succes;
+$link-color: $primary;
+
+// Adding (!) an additional theme color (ex. classes btn-cool, bg-cool)
+$theme-colors: (
+  'green-gob': #0b231e,
+);
+$input-border-width: 2rem;
+
+// Links
+$link-color: theme-color('primary');
+$link-decoration: underline !default;
+$link-hover-decoration: underline !default;
+
+// Buttons
+$btn-border-width: 2px;
+
+@mixin b-shadow {
+  box-shadow: 0 0.145rem 0.35rem rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 0.145rem 0.35rem rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 0.145rem 0.35rem rgba(0, 0, 0, 0.16);
+}
+
+@mixin bb-transparent {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+@mixin all-transition {
+  transition: all 0.5s ease;
+}
+
+@keyframes fadeInF {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeInF {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInF {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeInF {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeInF {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@mixin fadeIn {
+  animation: fadeInF linear 0.6s;
+  -webkit-animation: fadeInF linear 0.6s;
+  -moz-animation: fadeInF linear 0.6s;
+  -o-animation: fadeInF linear 0.6s;
+  -ms-animation: fadeInF linear 0.6s;
+}
