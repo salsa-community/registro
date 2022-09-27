@@ -333,3 +333,10 @@ nav {
     }
   }
 }
+.form-group,
+fieldset {
+  label:first-child,
+  legend:first-child {
+    font-weight: 600 !important;
+  }
+}
