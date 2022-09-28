@@ -25,6 +25,8 @@ import {
   BInputGroup,
   BInputGroupPrepend,
   BFormInvalidFeedback,
+  BRow,
+  BCol,
 } from 'bootstrap-vue';
 
 export function initBootstrapVue(vue) {
@@ -55,4 +57,6 @@ export function initBootstrapVue(vue) {
   vue.component('b-input-group', BInputGroup);
   vue.component('b-input-group-prepend', BInputGroupPrepend);
   vue.component('b-form-invalid-feedback', BFormInvalidFeedback);
+  vue.component('b-row', BRow);
+  vue.component('b-col', BCol);
 }
