@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 v-text="$t('checkData.title')" id="check-data-title" class="mt-5">Verifica tus datos</h1>
-    <form id="data-form" class="check-data-form" name="dataForm" role="form" v-on:submit.prevent="data()" no-validate>
+    <form id="data-form" class="check-data-form" name="dataForm" role="form" v-on:submit.prevent="checkDataF()" no-validate>
       <b-row>
         <b-col cols="12">
           <input-text
@@ -85,7 +85,7 @@
         </b-col>
         <b-col cols="12">
           <div class="form-group float-right">
-            <button class="button btn--primary-outline">
+            <button type="button" class="button btn--primary-outline">
               <span v-text="$t('checkData.form.btn-no')">No</span>
             </button>
             <button type="submit" class="button btn--primary" data-cy="submit">

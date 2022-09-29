@@ -6,6 +6,11 @@
       "btn-si": "Si",
       "btn-no": "No"
     },
+    "confirm": {
+      "title": "Confirma tu registro",
+      "message": "Con el enlace que te enviamos al correo electrónico que registraste, posteriormente ingresa el código de confirmación para continuar.",
+      "btn": "Aceptar"
+    },
     "name": {
       "label": "Nombre(s)",
       "placeHolder": "Ej. Nombre",

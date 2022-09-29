@@ -42,4 +42,21 @@ export default class CheckDataForm extends Vue {
     curp: undefined,
     email: undefined,
   };
+
+  public checkDataF() {
+    if (!this.$v.checkData.$invalid) {
+      this.$bvModal.msgBoxOk(this.$t('checkData.confirm.message').toString(), {
+        title: this.$t('checkData.confirm.title').toString(),
+        size: 'md',
+        buttonSize: 'md',
+        okVariant: 'primary',
+        headerClass: 'p-2 border-bottom-0',
+        footerClass: 'p-2 border-top-0',
+        okTitle: this.$t('checkData.confirm.btn').toString(),
+        centered: true,
+      });
+    } else {
+      this.$v.checkData.$touch();
+    }
+  }
 }
