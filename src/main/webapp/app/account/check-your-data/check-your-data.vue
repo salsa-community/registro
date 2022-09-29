@@ -81,23 +81,6 @@
           />
         </b-col>
         <b-col cols="12">
-          <input-text
-            id="id-email"
-            v-model="$v.checkData.email.$model"
-            :label="$t('checkData.email.label')"
-            :placeholder="$t('checkData.email.placeHolder')"
-            :readonly="false"
-            :required="true"
-            :valid="$v.checkData.email.$dirty ? !$v.checkData.email.$error : null"
-            :validationsCommons="{
-              requiredValue: !$v.checkData.email.required,
-              requiredMessage: $t('checkData.email.validations.required'),
-              regexValue: !$v.checkData.email.email,
-              regexMessage: $t('checkData.email.validations.regexMessage'),
-            }"
-          />
-        </b-col>
-        <b-col cols="12">
           <label v-text="$t('checkData.info')">La información que obtuvimos del RENAPO. ¿es correcta?</label>
         </b-col>
         <b-col cols="12">

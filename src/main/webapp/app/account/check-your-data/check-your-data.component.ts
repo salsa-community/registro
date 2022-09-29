@@ -26,10 +26,6 @@ const VALIDATIONS = function () {
         required,
         pattern: CURP,
       },
-      email: {
-        required,
-        email,
-      },
     },
   };
 };

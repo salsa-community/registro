@@ -51,16 +51,6 @@
         "maxMessage": "",
         "regexMessage": "Ingresa un CURP valido."
       }
-    },
-    "email": {
-      "label": "Correo electrónico",
-      "placeHolder": "Ej. nombre@correo.com",
-      "validations": {
-        "required": "El campo Correo electrónico es requerido",
-        "minMessage": "",
-        "maxMessage": "",
-        "regexMessage": "Correo electrónico invalido."
-      }
     }
   }
 }
