@@ -1,29 +1,32 @@
 <template>
-  <b-navbar data-cy="navbar" toggleable="md" type="dark" class="bg-primary">
-    <b-navbar-brand class="logo" b-link to="/">
-      <span class="logo-img"></span>
-      <span v-text="$t('global.title')" class="navbar-title">registro</span> <span class="navbar-version">{{ version }}</span>
+  <b-navbar type="dark" class="fixed-top">
+    <b-navbar-brand href="#">
+      <img src="../../../content/images/conacyt.svg" alt="Conacyt" />
     </b-navbar-brand>
-    <b-navbar-toggle
-      right
-      class="jh-navbar-toggler d-lg-none"
-      href="javascript:void(0);"
-      data-toggle="collapse"
-      target="header-tabs"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <font-awesome-icon icon="bars" />
-    </b-navbar-toggle>
 
     <b-collapse is-nav id="header-tabs">
-      <b-navbar-nav class="ml-auto">
-        <b-nav-item to="/" exact>
-          <span>
-            <font-awesome-icon icon="home" />
-            <span v-text="$t('global.menu.home')">Home</span>
-          </span>
+      <b-navbar-nav>
+        <b-nav-item href="#">
+          <span v-text="$t('global.menu.home')">Inicio</span>
         </b-nav-item>
+        <b-nav-item href="#">
+          <span v-text="$t('global.menu.aboutus')">¿Quiénes somos?</span>
+        </b-nav-item>
+        <b-nav-item href="#">
+          <span v-text="$t('global.menu.strategies')">Estrategias</span>
+        </b-nav-item>
+        <b-nav-item href="#">
+          <span v-text="$t('global.menu.goals')">Metas</span>
+        </b-nav-item>
+        <b-nav-item href="#">
+          <span v-text="$t('global.menu.indicators')">Indicadores</span>
+        </b-nav-item>
+        <b-nav-item href="#">
+          <span v-text="$t('global.menu.contact')">Contacto</span>
+        </b-nav-item>
+      </b-navbar-nav>
+
+      <b-navbar-nav class="ml-auto">
         <b-nav-item-dropdown right id="entity-menu" v-if="authenticated" active-class="active" class="pointer" data-cy="entity">
           <span slot="button-content" class="navbar-dropdown-menu">
             <font-awesome-icon icon="th-list" />
@@ -72,7 +75,7 @@
         </b-nav-item-dropdown>
         <b-nav-item-dropdown id="languagesnavBarDropdown" right v-if="languages && Object.keys(languages).length > 1">
           <span slot="button-content">
-            <font-awesome-icon icon="flag" />
+            <span class="icon-idioma"></span>
             <span class="no-bold" v-text="$t('global.menu.language')">Language</span>
           </span>
           <b-dropdown-item
@@ -94,7 +97,7 @@
           data-cy="accountMenu"
         >
           <span slot="button-content" class="navbar-dropdown-menu">
-            <font-awesome-icon icon="user" />
+            <span class="icon-usuario"></span>
             <span class="no-bold" v-text="$t('global.menu.account.main')"> Account </span>
           </span>
           <b-dropdown-item data-cy="settings" to="/account/settings" tag="b-dropdown-item" v-if="authenticated" active-class="active">
@@ -133,50 +136,9 @@
 <script lang="ts" src="./jhi-navbar.component.ts"></script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-/* ==========================================================================
-    Navbar
-    ========================================================================== */
-.navbar-version {
-  font-size: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .jh-navbar-toggler {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1150px) {
-  span span {
-    display: none;
-  }
-}
-
-.navbar-title {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* ==========================================================================
-    Logo styles
-    ========================================================================== */
-.navbar-brand.logo {
-  padding: 5px 15px;
-}
-
-.logo .logo-img {
-  height: 45px;
-  display: inline-block;
-  vertical-align: middle;
-  width: 70px;
-}
-
-.logo-img {
-  height: 100%;
-  background: url('../../../content/images/logo-jhipster.png') no-repeat center center;
-  background-size: contain;
-  width: 100%;
-  filter: drop-shadow(0 0 0.05rem white);
+<style lang="scss" scoped>
+[class^='icon-'],
+[class*=' icon-'] {
+  font-size: 1.25rem !important;
 }
 </style>

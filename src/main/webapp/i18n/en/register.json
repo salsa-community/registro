@@ -2,7 +2,38 @@
   "register": {
     "title": "Registration",
     "form": {
-      "button": "Register"
+      "button": "Continue"
+    },
+    "no-curp": "¿No conoces tu CURP?",
+    "curp": {
+      "label": "Ingresa tu CURP",
+      "placeHolder": "Ej. MAHJ280603MSPRRV09",
+      "validations": {
+        "required": "El campo CURP es requerido",
+        "minMessage": "",
+        "maxMessage": "",
+        "regexMessage": "Ingresa un CURP valido."
+      }
+    },
+    "email": {
+      "label": "Correo electrónico",
+      "placeHolder": "Ej. nombre@correo.com",
+      "validations": {
+        "required": "El campo Correo electrónico es requerido",
+        "minMessage": "",
+        "maxMessage": "",
+        "regexMessage": "Correo electrónico invalido."
+      }
+    },
+    "confirm-email": {
+      "label": "Confirma tu correo electrónico",
+      "placeHolder": "Ej. nombre@correo.com",
+      "validations": {
+        "required": "El campo Correo electrónico es requerido",
+        "minMessage": "",
+        "maxMessage": "",
+        "regexMessage": "El correo electrónico no coincide."
+      }
     },
     "messages": {
       "validate": {

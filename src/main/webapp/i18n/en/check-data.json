@@ -1,0 +1,66 @@
+{
+  "checkData": {
+    "title": "Verifica tus datos",
+    "info": "La información que obtuvimos del RENAPO. ¿es correcta?",
+    "form": {
+      "btn-si": "Si",
+      "btn-no": "No"
+    },
+    "name": {
+      "label": "Nombre(s)",
+      "placeHolder": "Ej. Nombre",
+      "validations": {
+        "required": "El campo Nombre(s) es requerido",
+        "minMessage": "",
+        "maxMessage": ""
+      }
+    },
+    "firstName": {
+      "label": "Primer apellido",
+      "placeHolder": "Ej. González",
+      "validations": {
+        "required": "El campo Primer apellido es requerido",
+        "minMessage": "",
+        "maxMessage": ""
+      }
+    },
+    "lastName": {
+      "label": "Segundo apellido",
+      "placeHolder": "Ej. Martinez",
+      "validations": {
+        "required": "El campo Segundo apellido es requerido",
+        "minMessage": "",
+        "maxMessage": ""
+      }
+    },
+    "country": {
+      "label": "País de nacimiento",
+      "placeHolder": "Ej. México",
+      "validations": {
+        "required": "El campo País de nacimiento es requerido",
+        "minMessage": "",
+        "maxMessage": ""
+      }
+    },
+    "curp": {
+      "label": "CURP",
+      "placeHolder": "Ej. MAHJ280603MSPRRV09",
+      "validations": {
+        "required": "El campo CURP es requerido",
+        "minMessage": "",
+        "maxMessage": "",
+        "regexMessage": "Ingresa un CURP valido."
+      }
+    },
+    "email": {
+      "label": "Correo electrónico",
+      "placeHolder": "Ej. nombre@correo.com",
+      "validations": {
+        "required": "El campo Correo electrónico es requerido",
+        "minMessage": "",
+        "maxMessage": "",
+        "regexMessage": "Correo electrónico invalido."
+      }
+    }
+  }
+}

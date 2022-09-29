@@ -1,0 +1,346 @@
+@import 'fonts';
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-sans-serif;
+  font-size: 1rem !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#app,
+.conacyt-login-container {
+  height: 100%;
+}
+
+.app-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 90 !important;
+  .column {
+    padding: 10px;
+    background: #fff;
+    -webkit-flex: 1;
+    /* Safari */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+    /* Standard syntax */
+  }
+  .column.bg-alt {
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 40% !important;
+  }
+  .welcome-panel {
+    margin: 6rem;
+  }
+}
+
+.form-group label {
+  margin: 0px !important;
+}
+
+.welcome-panel {
+  color: #fff;
+  line-height: 1.5rem;
+}
+
+.welcome-panel__pretitle {
+  font-size: 2em;
+  padding-top: 1.875rem;
+}
+
+.welcome-panel__title {
+  font-size: 6rem;
+  line-height: normal;
+}
+
+.welcome-panel__title img {
+  padding-top: 3rem;
+  width: 23.75rem;
+  height: auto;
+}
+
+.app-container .login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .login-wrapper {
+    display: flex;
+    margin: auto;
+    padding: 1.25rem;
+  }
+}
+
+.login-form {
+  width: 31.25rem;
+  margin: 30px 0;
+}
+.check-data-form {
+  width: 38.25rem;
+  margin: 30px 0;
+}
+
+.login-form__title {
+  color: #000;
+  font-size: 1.75em;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.bx--main-content-header--title {
+  position: relative;
+  margin-bottom: 2.8rem;
+}
+
+.main-content-header-title__golden-line {
+  position: absolute;
+  background-color: #b38e5d;
+  bottom: -0.625rem;
+  width: 2.188rem;
+  height: 0.313rem;
+}
+
+input[name='username'],
+input[type='text'],
+input[type='email'],
+input[type='password'],
+select {
+  /* background-color: #F2F4F8; */
+  border: 2px solid #000;
+  border-radius: 30px;
+  /* box-sizing: border-box;
+    box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.1); */
+  display: inline-block;
+  font-family: Montserrat, 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.25rem;
+  margin: 0.5rem 0;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus {
+  border-color: #d12765;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(118, 10, 58, 0.25);
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  border-color: transparent;
+  border-radius: 2rem;
+  border-style: none;
+  display: inline-block;
+  font-family: Montserrat, 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 0.8rem 1.5rem;
+  text-align: center;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: $blue-conacyt !important;
+  color: #fff;
+}
+
+.btn--primary:hover,
+.btn--primary:focus,
+.btn--primary:active,
+.btn--primary.active,
+.btn--primary:active:focus,
+.btn--primary:active:hover,
+.btn--primary.active:focus,
+.btn-primary.active:hover,
+.show > .btn--primary.dropdown-toggle,
+.show > .btn--primary.dropdown-toggle:focus,
+.show > .btn--primary.dropdown-toggle:hover {
+  background-color: $blue-conacyt !important;
+  color: #fff;
+}
+
+.btn--primary.focus,
+.btn--primary:focus {
+  border-color: $blue-conacyt !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5) !important;
+}
+.btn--primary-outline {
+  background-color: #fff;
+  color: #404041;
+  border: solid 1px #7c8faf;
+}
+
+.btn--primary:hover,
+.btn--primary:focus,
+.btn--primary:active,
+.btn--primary.active,
+.btn--primary:active:focus,
+.btn--primary:active:hover,
+.btn--primary.active:focus,
+.btn-primary.active:hover,
+.show > .btn--primary.dropdown-toggle,
+.show > .btn--primary.dropdown-toggle:focus,
+.show > .btn--primary.dropdown-toggle:hover {
+  background-color: #2f2b2c;
+  color: #fff;
+}
+
+.btn--primary.focus,
+.btn--primary:focus {
+  border-color: #2f2b2c;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5) !important;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem !important;
+}
+
+.visibility {
+  float: right;
+  position: relative;
+  top: 44px;
+  left: -16px;
+}
+
+.message-text {
+  width: 322px;
+  height: 60px;
+  opacity: 0.87;
+  line-height: 1.3;
+  text-align: left;
+  color: red;
+  border: 0px;
+  position: relative;
+  top: 210px;
+  left: 64px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.login-link {
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  padding-top: 8px;
+  text-decoration: underline;
+}
+
+.login-link:hover,
+.login-link:focus {
+  color: #000;
+}
+
+.py-link {
+  padding: 8px 0 16px;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.bg-dark {
+  background-color: #000 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+nav {
+  padding: 0.5rem 1rem !important;
+}
+
+.border-top {
+  border-top: 2px solid #000 !important;
+}
+.progress {
+  height: 0.5rem !important;
+}
+
+.navbar-dark {
+  background-color: $navbar-top !important;
+
+  .navbar-nav {
+    .nav-link {
+      color: $white !important;
+
+      &:hover {
+        color: $exito !important;
+      }
+    }
+  }
+}
+.form-group,
+fieldset {
+  label:first-child,
+  legend:first-child {
+    font-weight: 600 !important;
+  }
+}

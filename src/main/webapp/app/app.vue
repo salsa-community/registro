@@ -1,19 +1,24 @@
 <template>
   <div id="app">
     <ribbon></ribbon>
-    <div id="app-header">
-      <jhi-navbar></jhi-navbar>
-    </div>
-    <div class="container-fluid">
-      <div class="card jh-card">
-        <router-view></router-view>
+    <jhi-navbar></jhi-navbar>
+    <div class="conacyt-login-container app-container">
+      <div class="column bg-alt" style="background-image: url('../content/images/loginbg.svg')">
+        <div class="welcome-panel">
+          <div class="welcome-panel__title">
+            <img src="../content/images/logotipo.svg" alt="Rizoma" />
+          </div>
+        </div>
+      </div>
+      <div class="column login-container">
+        <div class="login-wrapper box-container">
+          <router-view></router-view>
+        </div>
       </div>
       <b-modal id="login-page" hide-footer lazy>
         <span data-cy="loginTitle" slot="modal-title" id="login-title" v-text="$t('login.title')">Sign in</span>
         <login-form></login-form>
       </b-modal>
-
-      <jhi-footer></jhi-footer>
     </div>
   </div>
 </template>

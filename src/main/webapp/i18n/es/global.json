@@ -4,6 +4,11 @@
     "browsehappy": "Está usando un navegador <strong>no actualizado</strong>. Por favor, <a href=\"http://browsehappy.com/?locale=es\">actualice su navegador</a> para mejorar su experiencia.",
     "menu": {
       "home": "Inicio",
+      "aboutus": "¿Quiénes somos?",
+      "strategies": "Estrategias",
+      "goals": "Metas",
+      "indicators": "Indicadores",
+      "contact": "Contacto",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entidades",

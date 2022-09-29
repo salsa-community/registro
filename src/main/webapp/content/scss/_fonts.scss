@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?w7aihp');
+  src: url('../fonts/icomoon.eot?w7aihp#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?w7aihp') format('truetype'),
+    url('../fonts/icomoon.woff?w7aihp') format('woff'), url('../fonts/icomoon.svg?w7aihp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-abajo:before {
+  content: '\61';
+}
+.icon-abajo-der:before {
+  content: '\62';
+}
+.icon-abajo-izq:before {
+  content: '\63';
+}
+.icon-abc-asc:before {
+  content: '\64';
+}
+.icon-abc-des:before {
+  content: '\65';
+}
+.icon-accesibilidad:before {
+  content: '\66';
+}
+.icon-acerca .path1:before {
+  content: '\67';
+  color: rgb(35, 31, 32);
+}
+.icon-acerca .path2:before {
+  content: '\68';
+  margin-left: -1em;
+  color: rgb(20, 20, 20);
+}
+.icon-actualizar:before {
+  content: '\e908';
+}
+.icon-adelantar:before {
+  content: '\69';
+}
+.icon-anterior:before {
+  content: '\6a';
+}
+.icon-aportaciones:before {
+  content: '\6b';
+}
+.icon-archivo:before {
+  content: '\6d';
+}
+.icon-arriba:before {
+  content: '\6e';
+}
+.icon-arriba-der:before {
+  content: '\f1';
+}
+.icon-arriba-izq:before {
+  content: '\6f';
+}
+.icon-ascendente:before {
+  content: '\70';
+}
+.icon-aviso:before {
+  content: '\71';
+}
+.icon-ayuda:before {
+  content: '\72';
+}
+.icon-buscar:before {
+  content: '\73';
+}
+.icon-caja:before {
+  content: '\74';
+}
+.icon-calendario:before {
+  content: '\75';
+}
+.icon-calificacion:before {
+  content: '\76';
+}
+.icon-camara:before {
+  content: '\77';
+}
+.icon-cargar:before {
+  content: '\78';
+}
+.icon-centrar-mapa:before {
+  content: '\79';
+}
+.icon-cerrar:before {
+  content: '\7a';
+}
+.icon-check:before {
+  content: '\31';
+}
+.icon-check-caja:before {
+  content: '\32';
+}
+.icon-check-circulo:before {
+  content: '\33';
+}
+.icon-check-neg:before {
+  content: '\34';
+}
+.icon-colapsar:before {
+  content: '\35';
+}
+.icon-colapsar-abajo:before {
+  content: '\36';
+}
+.icon-colapsar-arriba:before {
+  content: '\37';
+}
+.icon-colapsar-der:before {
+  content: '\38';
+}
+.icon-colapsar-izq:before {
+  content: '\39';
+}
+.icon-comunidades:before {
+  content: '\30';
+}
+.icon-configuracion:before {
+  content: '\27';
+}
+.icon-copiar:before {
+  content: '\bf';
+}
+.icon-correo-nuevo:before {
+  content: '\b4';
+}
+.icon-curso:before {
+  content: '\2b';
+}
+.icon-cursos:before {
+  content: '\2d';
+}
+.icon-datos-gen:before {
+  content: '\2a';
+}
+.icon-derecha:before {
+  content: '\2f';
+}
+.icon-descargar:before {
+  content: '\2e';
+}
+.icon-descendente:before {
+  content: '\7b';
+}
+.icon-desplegar:before {
+  content: '\7d';
+}
+.icon-detener:before {
+  content: '\7c';
+}
+.icon-diploma:before {
+  content: '\21';
+}
+.icon-doc:before {
+  content: '\22';
+}
+.icon-editar:before {
+  content: '\23';
+}
+.icon-educacion:before {
+  content: '\24';
+}
+.icon-eliminar:before {
+  content: '\25';
+}
+.icon-eliminar-perfil:before {
+  content: '\26';
+}
+.icon-empleo:before {
+  content: '\28';
+}
+.icon-enlace:before {
+  content: '\29';
+}
+.icon-enlace-2:before {
+  content: '\3d';
+}
+.icon-entrar:before {
+  content: '\3f';
+}
+.icon-escribir:before {
+  content: '\a1';
+}
+.icon-evaliacion-2:before {
+  content: '\5d';
+}
+.icon-evaluacion:before {
+  content: '\7e';
+}
+.icon-expandir:before {
+  content: '\5f';
+}
+.icon-guardar .path1:before {
+  content: '\3a';
+  color: rgb(0, 0, 0);
+}
+.icon-guardar .path2:before {
+  content: '\3b';
+  margin-left: -1em;
+  color: rgb(20, 20, 20);
+}
+.icon-guardar .path3:before {
+  content: '\3c';
+  margin-left: -1em;
+  color: rgb(20, 20, 20);
+}
+.icon-idioma:before {
+  content: '\51';
+}
+.icon-imagen:before {
+  content: '\57';
+}
+.icon-imprimir:before {
+  content: '\52';
+}
+.icon-info:before {
+  content: '\54';
+}
+.icon-inicio:before {
+  content: '\59';
+}
+.icon-invertir:before {
+  content: '\55';
+}
+.icon-izquierda:before {
+  content: '\49';
+}
+.icon-libro:before {
+  content: '\4f';
+}
+.icon-mas:before {
+  content: '\50';
+}
+.icon-me-gusta:before {
+  content: '\4c';
+}
+.icon-menos:before {
+  content: '\41';
+}
+.icon-correo:before {
+  content: '\53';
+}
+.icon-menu:before {
+  content: '\44';
+}
+.icon-menu-puntos:before {
+  content: '\46';
+}
+.icon-mexico:before {
+  content: '\47';
+}
+.icon-no-me-gusta:before {
+  content: '\48';
+}
+.icon-ocultar:before {
+  content: '\4a';
+}
+.icon-pausa:before {
+  content: '\4b';
+}
+.icon-pdf:before {
+  content: '\5a';
+}
+.icon-ppt:before {
+  content: '\58';
+}
+.icon-premio:before {
+  content: '\43';
+}
+.icon-regresar:before {
+  content: '\56';
+}
+.icon-reproducir:before {
+  content: '\42';
+}
+.icon-retraer:before {
+  content: '\4e';
+}
+.icon-siguiente:before {
+  content: '\4d';
+}
+.icon-telefono:before {
+  content: '\2c';
+}
+
+.icon-telefono-b:before {
+  content: '\b0';
+}
+.icon-tesis:before {
+  content: '\ac';
+}
+.icon-tiempo:before {
+  content: '\40';
+}
+.icon-ubicacion:before {
+  content: '\e9';
+}
+.icon-ubicacion-pin:before {
+  content: '\e1';
+}
+.icon-usuario:before {
+  content: '\fa';
+}
+.icon-ver:before {
+  content: '\f3';
+}
