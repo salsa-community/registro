@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
-import { email, helpers, required } from 'vuelidate/lib/validators';
+import { helpers, required } from 'vuelidate/lib/validators';
 
 const CURP = helpers.regex(
   'curp',

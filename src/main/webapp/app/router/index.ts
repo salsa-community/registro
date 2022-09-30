@@ -8,6 +8,7 @@ Component.registerHooks([
 import Router, { RouteConfig } from 'vue-router';
 
 const Home = () => import('@/core/home/home.vue');
+const Register = () => import('@/account/register/register.vue');
 const Error = () => import('@/core/error/error.vue');
 import account from '@/router/account';
 import admin from '@/router/admin';
@@ -22,8 +23,8 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
-      component: Home
+      name: 'Register',
+      component: Register
     },
     {
       path: '/forbidden',
