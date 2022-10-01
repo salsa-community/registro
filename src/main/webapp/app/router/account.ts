@@ -2,6 +2,7 @@ import { Authority } from '@/shared/security/authority';
 
 const Register = () => import('@/account/register/register.vue');
 const CheckData = () => import('@/account/check-your-data/check-your-data.vue');
+const ConfirmationCode = () => import('@/account/confirmation-code/confirmation-code.vue');
 const Activate = () => import('@/account/activate/activate.vue');
 const ResetPasswordInit = () => import('@/account/reset-password/init/reset-password-init.vue');
 const ResetPasswordFinish = () => import('@/account/reset-password/finish/reset-password-finish.vue');
@@ -18,6 +19,11 @@ export default [
     path: '/check-data',
     name: 'CheckData',
     component: CheckData,
+  },
+  {
+    path: '/confirmation-code',
+    name: 'ConfirmationCode',
+    component: ConfirmationCode,
   },
   {
     path: '/account/activate',

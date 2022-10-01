@@ -1,0 +1,26 @@
+{
+  "confirmation": {
+    "title": "Código de confirmación",
+    "message": {
+      "enter": "Ingresa el código de confirmación que enviamos a",
+      "notCode": "¿No te llegó ningún código?",
+      "haveAccount": "¿Tienes una cuenta?"
+    },
+    "form": {
+      "btn": "Aceptar"
+    },
+    "link": {
+      "resend": "Reenviar código",
+      "back": "Volver",
+      "logIn": "Iniciar sesión"
+    },
+    "code": {
+      "label": "Código de confirmación",
+      "validations": {
+        "required": "El campo Código de confirmación es requerido",
+        "minMessage": "",
+        "maxMessage": ""
+      }
+    }
+  }
+}

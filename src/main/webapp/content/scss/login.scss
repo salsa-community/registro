@@ -344,3 +344,34 @@ fieldset {
     font-weight: 600 !important;
   }
 }
+
+.modal-content {
+  border-radius: 1.3rem !important;
+  border: none !important;
+
+  .modal-header {
+    border-radius: 1.3rem 1.3rem 0 0 !important;
+    background: $blue-conacyt !important;
+
+    h5 {
+      color: $white !important;
+    }
+
+    .close {
+      color: $white !important;
+    }
+  }
+}
+.btn {
+  border-radius: 1.3rem !important;
+}
+.btn-primary {
+  background-color: $blue-conacyt !important;
+  border-color: $blue-conacyt !important;
+}
+
+.btn-outline-primary {
+  background-color: $white !important;
+  color: $outilne-primary-text !important;
+  border-color: $outilne-primary !important;
+}

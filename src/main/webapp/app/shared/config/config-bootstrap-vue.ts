@@ -1,4 +1,4 @@
-import {
+import BootstrapVue, {
   BForm,
   BFormInput,
   BFormCheckbox,
@@ -59,4 +59,5 @@ export function initBootstrapVue(vue) {
   vue.component('b-form-invalid-feedback', BFormInvalidFeedback);
   vue.component('b-row', BRow);
   vue.component('b-col', BCol);
+  vue.use(BootstrapVue);
 }

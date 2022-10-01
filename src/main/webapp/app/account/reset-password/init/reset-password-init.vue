@@ -1,77 +1,40 @@
 <template>
   <div>
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <h1 v-text="$t('reset.request.title')">Reset your password</h1>
+    <h1 v-text="$t('reset.request.title')">Reset your password</h1>
 
-        <div class="alert alert-warning" v-if="!success">
-          <p v-text="$t('reset.request.messages.info')">Enter the email address you used to register.</p>
-        </div>
-
-        <div class="alert alert-success" v-if="success">
-          <p v-text="$t('reset.request.messages.success')">Check your emails for details on how to reset your password.</p>
-        </div>
-
-        <form v-if="!success" name="form" role="form" v-on:submit.prevent="requestReset()">
-          <div class="form-group">
-            <label class="form-control-label" for="email" v-text="$t('global.form[\'email.label\']')">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              name="email"
-              v-bind:placeholder="$t('global.form[\'email.placeholder\']')"
-              :class="{ valid: !$v.resetAccount.email.$invalid, invalid: $v.resetAccount.email.$invalid }"
-              v-model="$v.resetAccount.email.$model"
-              minlength="5"
-              maxlength="254"
-              email
-              required
-              data-cy="emailResetPassword"
-            />
-            <div v-if="$v.resetAccount.email.$anyDirty && $v.resetAccount.email.$invalid">
-              <small
-                class="form-text text-danger"
-                v-if="!$v.resetAccount.email.required"
-                v-text="$t('global.messages.validate.email.required')"
-              >
-                Your email is required.
-              </small>
-              <small
-                class="form-text text-danger"
-                v-if="!$v.resetAccount.email.email"
-                v-text="$t('global.messages.validate.email.invalid')"
-              >
-                Your email is invalid.
-              </small>
-              <small
-                class="form-text text-danger"
-                v-if="!$v.resetAccount.email.minLength"
-                v-text="$t('global.messages.validate.email.minlength')"
-              >
-                Your email is required to be at least 5 characters.
-              </small>
-              <small
-                class="form-text text-danger"
-                v-if="!$v.resetAccount.email.maxLength"
-                v-text="$t('global.messages.validate.email.maxlength')"
-              >
-                Your email cannot be longer than 100 characters.
-              </small>
-            </div>
-          </div>
-          <button
-            type="submit"
-            :disabled="$v.resetAccount.$invalid"
-            class="btn btn-primary"
-            v-text="$t('reset.request.form.button')"
-            data-cy="submit"
-          >
-            Reset
-          </button>
-        </form>
+    <form v-if="!success" class="check-data-form" name="form" role="form" v-on:submit.prevent="requestReset()">
+      <div v-if="!success">
+        <p v-text="$t('reset.request.messages.info')">Enter the email address you used to register.</p>
       </div>
-    </div>
+
+      <div v-if="success">
+        <p v-text="$t('reset.request.messages.success')">Check your emails for details on how to reset your password.</p>
+      </div>
+
+      <input-text
+        id="email"
+        v-model="$v.resetAccount.email.$model"
+        :label="$t('global.form[\'email.label\']')"
+        :placeholder="$t('global.form[\'email.placeholder\']')"
+        :readonly="false"
+        :required="true"
+        :valid="$v.resetAccount.email.$dirty ? !$v.resetAccount.email.$error : null"
+        :validationsCommons="{
+          requiredValue: !$v.resetAccount.email.required,
+          requiredMessage: $t('global.messages.validate.email.required'),
+          minValue: !$v.resetAccount.email.minLength,
+          minMessage: $t('mi-perfil.rfc.validations.minMessage', { min: '5' }),
+          maxValue: !$v.resetAccount.email.maxLength,
+          maxMessage: $t('mi-perfil.rfc.validations.maxMessage', { max: '100' }),
+          regexValue: !$v.resetAccount.email.email,
+          regexMessage: $t('global.messages.validate.email.invalid'),
+        }"
+      />
+
+      <div class="form-group float-right">
+        <button type="submit" class="btn btn-primary" v-text="$t('reset.request.form.button')" data-cy="submit">Reset</button>
+      </div>
+    </form>
   </div>
 </template>
 

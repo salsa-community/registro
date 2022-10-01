@@ -28,19 +28,23 @@ export default class ResetPasswordInit extends Vue {
   };
 
   public requestReset(): void {
-    this.error = null;
-    axios
-      .post('api/account/reset-password/init', this.resetAccount.email, {
-        headers: {
-          'content-type': 'text/plain',
-        },
-      })
-      .then(() => {
-        this.success = true;
-      })
-      .catch(() => {
-        this.success = null;
-        this.error = 'ERROR';
-      });
+    if (!this.$v.resetAccount.$invalid) {
+      this.error = null;
+      axios
+        .post('api/account/reset-password/init', this.resetAccount.email, {
+          headers: {
+            'content-type': 'text/plain',
+          },
+        })
+        .then(() => {
+          this.success = true;
+        })
+        .catch(() => {
+          this.success = null;
+          this.error = 'ERROR';
+        });
+    } else {
+      this.$v.resetAccount.$touch();
+    }
   }
 }

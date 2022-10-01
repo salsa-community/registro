@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 v-text="$t('checkData.title')" id="check-data-title" class="mt-5">Verifica tus datos</h1>
-    <form id="data-form" class="check-data-form" name="dataForm" role="form" v-on:submit.prevent="data()" no-validate>
+    <form id="data-form" class="check-data-form" name="dataForm" role="form" v-on:submit.prevent="checkDataF()" no-validate>
       <b-row>
         <b-col cols="12">
           <input-text
@@ -81,28 +81,11 @@
           />
         </b-col>
         <b-col cols="12">
-          <input-text
-            id="id-email"
-            v-model="$v.checkData.email.$model"
-            :label="$t('checkData.email.label')"
-            :placeholder="$t('checkData.email.placeHolder')"
-            :readonly="false"
-            :required="true"
-            :valid="$v.checkData.email.$dirty ? !$v.checkData.email.$error : null"
-            :validationsCommons="{
-              requiredValue: !$v.checkData.email.required,
-              requiredMessage: $t('checkData.email.validations.required'),
-              regexValue: !$v.checkData.email.email,
-              regexMessage: $t('checkData.email.validations.regexMessage'),
-            }"
-          />
-        </b-col>
-        <b-col cols="12">
           <label v-text="$t('checkData.info')">La información que obtuvimos del RENAPO. ¿es correcta?</label>
         </b-col>
         <b-col cols="12">
           <div class="form-group float-right">
-            <button class="button btn--primary-outline">
+            <button type="button" class="button btn--primary-outline">
               <span v-text="$t('checkData.form.btn-no')">No</span>
             </button>
             <button type="submit" class="button btn--primary" data-cy="submit">
