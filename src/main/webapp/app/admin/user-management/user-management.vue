@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>
+    <h2 class="mt-role_admin mb-5">
       <span id="user-management-page-heading" v-text="$t('userManagement.home.title')" data-cy="userManagementPageHeading">Users</span>
 
       <div class="d-flex justify-content-end">

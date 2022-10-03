@@ -1,15 +1,20 @@
 import axios from 'axios';
 import Component from 'vue-class-component';
-import { Vue, Inject } from 'vue-property-decorator';
+import { Inject } from 'vue-property-decorator';
 import AccountService from '@/account/account.service';
+import JhiNavbar from '@/core/jhi-navbar/jhi-navbar.vue';
+import Home from '@/core/home/home.vue';
 @Component({
+  components: {
+    home: Home,
+  },
   watch: {
     $route() {
       (this.$root as any).$emit('bv::hide::modal', 'login-page');
     },
   },
 })
-export default class LoginForm extends Vue {
+export default class LoginForm extends JhiNavbar {
   @Inject('accountService')
   private accountService: () => AccountService;
   public authenticationError = null;
@@ -34,7 +39,6 @@ export default class LoginForm extends Vue {
           }
         }
         this.authenticationError = false;
-        (this.$root as any).$emit('bv::hide::modal', 'login-page');
         this.accountService().retrieveAccount();
       })
       .catch(() => {

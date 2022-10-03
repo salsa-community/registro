@@ -2,7 +2,7 @@
   <div id="app">
     <ribbon></ribbon>
     <jhi-navbar></jhi-navbar>
-    <div class="conacyt-login-container app-container">
+    <div v-if="!hasAnyAuthority('ROLE_ADMIN') && !authenticated" class="conacyt-login-container app-container">
       <div class="column bg-alt" style="background-image: url('../content/images/loginbg.svg')">
         <div class="welcome-panel">
           <div class="welcome-panel__title">
@@ -15,10 +15,9 @@
           <router-view></router-view>
         </div>
       </div>
-      <b-modal id="login-page" hide-footer lazy>
-        <span data-cy="loginTitle" slot="modal-title" id="login-title" v-text="$t('login.title')">Sign in</span>
-        <login-form></login-form>
-      </b-modal>
+    </div>
+    <div v-else class="container-fluid admin-container">
+      <router-view></router-view>
     </div>
   </div>
 </template>

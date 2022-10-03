@@ -1,6 +1,7 @@
 {
   "login": {
-    "title": "Sign in",
+    "title": "Welcome Rizoma",
+    "title2": "Sign in",
     "form": {
       "password": "Password",
       "password.placeholder": "Your password",

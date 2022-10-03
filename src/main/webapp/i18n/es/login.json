@@ -1,6 +1,7 @@
 {
   "login": {
-    "title": "Iniciar la sesión",
+    "title": "Bienvenido a Rizoma",
+    "title2": "Iniciar sesión",
     "form": {
       "password": "Contraseña",
       "password.placeholder": "Su contraseña",
