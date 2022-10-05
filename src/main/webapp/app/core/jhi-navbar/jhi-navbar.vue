@@ -112,10 +112,6 @@
             <font-awesome-icon icon="sign-out-alt" />
             <span v-text="$t('global.menu.account.logout')">Sign out</span>
           </b-dropdown-item>
-          <b-dropdown-item data-cy="login" v-if="!authenticated" v-on:click="openLogin()" id="login" active-class="active">
-            <font-awesome-icon icon="sign-in-alt" />
-            <span v-text="$t('global.menu.account.login')">Sign in</span>
-          </b-dropdown-item>
           <b-dropdown-item
             data-cy="register"
             to="/register"

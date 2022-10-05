@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>
+    <h2 class="mt-role_admin">
       <span id="health-page-heading" v-text="$t('health.title')" data-cy="healthPageHeading">Health Checks</span>
       <button class="btn btn-primary float-right" v-on:click="refresh()" :disabled="updatingHealth">
         <font-awesome-icon icon="sync"></font-awesome-icon> <span v-text="$t('health[\'refresh.button\']')">Refresh</span>

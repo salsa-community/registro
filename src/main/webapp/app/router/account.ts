@@ -1,5 +1,6 @@
 import { Authority } from '@/shared/security/authority';
 
+const Login = () => import('@/account/login-form/login-form.vue');
 const Register = () => import('@/account/register/register.vue');
 const CheckData = () => import('@/account/check-your-data/check-your-data.vue');
 const ConfirmationCode = () => import('@/account/confirmation-code/confirmation-code.vue');
@@ -10,6 +11,11 @@ const ChangePassword = () => import('@/account/change-password/change-password.v
 const Settings = () => import('@/account/settings/settings.vue');
 
 export default [
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login,
+  },
   {
     path: '/register',
     name: 'Register',

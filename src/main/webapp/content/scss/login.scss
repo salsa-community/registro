@@ -375,3 +375,15 @@ fieldset {
   color: $outilne-primary-text !important;
   border-color: $outilne-primary !important;
 }
+
+.role_admin {
+  max-width: 30% !important;
+}
+.mt-role_admin {
+  margin-top: 6rem !important;
+}
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
