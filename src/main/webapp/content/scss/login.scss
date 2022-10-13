@@ -188,10 +188,11 @@ input[type='password']:focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5) !important;
 }
-.btn--primary-outline {
-  background-color: #fff;
-  color: #404041;
-  border: solid 1px #7c8faf;
+.btn--primary-outline,
+.btn-primary-outline {
+  background-color: #fff !important;
+  color: #404041 !important;
+  border: solid 1px #7c8faf !important;
 }
 
 .btn--primary:hover,
@@ -386,4 +387,9 @@ fieldset {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+#popover-password {
+  .text-muted {
+    font-size: smaller !important;
+  }
 }

@@ -2,6 +2,7 @@ import { Authority } from '@/shared/security/authority';
 
 const Login = () => import('@/account/login-form/login-form.vue');
 const Register = () => import('@/account/register/register.vue');
+const CreatePassword = () => import('@/account/create-password/create-password.vue');
 const CheckData = () => import('@/account/check-your-data/check-your-data.vue');
 const ConfirmationCode = () => import('@/account/confirmation-code/confirmation-code.vue');
 const Activate = () => import('@/account/activate/activate.vue');
@@ -30,6 +31,11 @@ export default [
     path: '/confirmation-code',
     name: 'ConfirmationCode',
     component: ConfirmationCode,
+  },
+  {
+    path: '/create-password',
+    name: 'CreatePassword',
+    component: CreatePassword,
   },
   {
     path: '/account/activate',
