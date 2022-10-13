@@ -14,7 +14,9 @@
       :state="valid"
       trim
       :readonly="readonly"
+      :type="type"
       @change="cambio($event)"
+      @keyup.native="keyup(text)"
     ></b-form-input>
     <b-form-invalid-feedback>
       <validations-commons

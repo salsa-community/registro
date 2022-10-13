@@ -7,6 +7,9 @@ export default class InputTextComponent extends mixins(PropertyCommons) {
   @Prop({ required: true })
   public value!: string;
 
+  @Prop({ required: false, default: 'text' })
+  type: string;
+
   get text(): string {
     return this.value;
   }
@@ -17,5 +20,9 @@ export default class InputTextComponent extends mixins(PropertyCommons) {
 
   cambio(e) {
     this.$emit('change', e);
+  }
+
+  keyup(e) {
+    this.$emit('keyup', e);
   }
 }
