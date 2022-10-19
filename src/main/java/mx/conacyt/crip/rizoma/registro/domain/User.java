@@ -75,6 +75,10 @@ public class User extends AbstractAuditingEntity<Long> implements Serializable {
     @Column("reset_date")
     private Instant resetDate = null;
 
+    @Size(max = 50)
+    @Column("token_validation")
+    private String tokenValidation;
+
     @JsonIgnore
     @Transient
     private Set<Authority> authorities = new HashSet<>();
@@ -174,6 +178,14 @@ public class User extends AbstractAuditingEntity<Long> implements Serializable {
 
     public void setLangKey(String langKey) {
         this.langKey = langKey;
+    }
+
+    public String getTokenValidation() {
+        return tokenValidation;
+    }
+
+    public void setTokenValidation(String tokenValidation) {
+        this.tokenValidation = tokenValidation;
     }
 
     public Set<Authority> getAuthorities() {

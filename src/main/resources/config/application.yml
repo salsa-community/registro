@@ -207,3 +207,6 @@ jhipster:
 # ===================================================================
 
 # application:
+renapoResource:
+  name: renapoms/api
+  url: http://10.0.2.15:8115/api
